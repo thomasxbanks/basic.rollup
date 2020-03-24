@@ -4,9 +4,10 @@ import thing from './modules/module';
 
 const init = async () => {
   const element = document.body.querySelector('main');
-  element.innerHTML += thing();
+  element.innerHTML += `<h1>${thing()}</h1>`;
+  element.innerHTML += '<br/>';
   await delay(2);
-  element.innerHTML += name;
+  element.innerHTML += `<h2>${name} 🤓</h2>`;
 };
 
 window.onload = init;
