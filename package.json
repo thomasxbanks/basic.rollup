@@ -7,7 +7,7 @@
     "js": "rollup -c -w",
     "dist": "live-server ./dist",
     "start": "concurrently \"npm run js\" \"npm run dist\"",
-    "deploy": "git add . && git commit -m \"Deployment $(date)\" && git push master && git subtree push --prefix dist origin gh-pages",
+    "deploy": "git add . && git commit -m \"Deployment $(date)\" && git push origin master && git subtree push --prefix dist origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
