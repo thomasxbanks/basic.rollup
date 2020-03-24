@@ -29,7 +29,6 @@
   const init = async () => {
     const element = document.body.querySelector('main');
     element.innerHTML += `<h1>${thing()}</h1>`;
-    element.innerHTML += '<br/>';
     await delay_1(2);
     element.innerHTML += `<h2>${name} 🤓</h2>`;
   };
